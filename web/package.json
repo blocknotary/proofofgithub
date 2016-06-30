@@ -1,0 +1,31 @@
+{
+  "name": "ProofOfGithub",
+  "version": "1.0.0",
+  "description": "Proof of Github",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.13.x",
+    "mongodb": "~2.1.x",
+    "body-parser": "^1.12.4",
+    "fs": "latest",
+    "web3": "latest",
+    "pug": "latest",
+    "uuid": "latest"
+  },
+  "engines": {
+    "node": "5.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/blocknotary/proofofgithub"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

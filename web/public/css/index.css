@@ -1,0 +1,468 @@
+.mainBody {
+	margin: 0 !important;
+}
+.githubRibbon {
+  width: 141;
+  height: 141;
+  /*background: transparent url("/img/gitHubRibbon.png") no-repeat center center;*/
+  content: url("/img/gitHubRibbon.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.middleMainContainer {
+	width: 100%;
+	/*height: 100%;*/
+	/*height: calc(100% - 160px);
+	height: -webkit-calc(100% - 160px);
+	height: -moz-calc(100% - 160px);*/
+  height: calc(100% - 160px);
+  height: -webkit-calc(100% - 160px);
+  height: -moz-calc(100% - 160px);
+	position: absolute;
+	left: 0;
+	top: 80px;
+	bottom: 80px;
+	background: rgb(247,247,247) url("/img/background.png") no-repeat right top;
+	/*padding-top: 80px;*/
+	vertical-align: middle;
+}
+.middleMainContainerInner {
+	width: 100%;
+	height: 100%;
+	padding-left: 120px;
+  position:relative; 
+  vertical-align: middle;
+  display: table;
+  box-sizing: border-box !important;
+}
+.middleMainContainerInnerInner {
+	position:relative; 
+	vertical-align: middle;
+	height: 100%;
+	display: table-cell;
+}
+.middleMainContainerInnerInner.bg {
+  width: 100%;
+}
+.POPLabelContainer {
+	margin-bottom: 30px;
+}
+.POPLabel {
+  text-transform: uppercase;
+	/*padding: 5px;*/
+  padding: 7px 12px 7px 12px;
+	background: rgb(73, 73, 73);
+	color: white;
+	border-radius: 3px;
+  height: 32px !important;
+	font-size: 14px;
+	font-weight: 600;
+}
+.POPTitleContainer {
+	margin-bottom: 10px;
+}
+.POPTitleContainerShortend {
+  margin-bottom: 10px;
+}
+.POPTitle {
+	text-transform: uppercase;
+	color: rgb(68, 68, 68);
+	font-size: 30px;
+	font-weight: 700;
+}
+.POPBottomDescriptionContainer {
+  width: 610px;
+}
+.POPDescContainer {
+	margin-bottom: 20px;
+}
+.POPDescContainerShortend {
+  margin-bottom: 15px;
+}
+.POPDesc {
+	color: #888888;
+	font-size: 14px;
+	line-height: 25px;
+}
+.inputContainer {
+	margin-bottom: 20px;
+	width: 825px;
+}
+.POPInput {
+  font-family: 'Open Sans', sans-serif;
+	height: 56px;
+	width: 400px;
+	border: none;
+	font-size: 14px;
+	border-radius: 5px;
+	padding-left: 50px;
+	margin-right: 20px;
+}
+.POPInput:focus {
+  outline: none;
+  /*outline-color: rgb(87,196,223);
+  outline-width: 2px;*/
+  /*box-shadow: 0 0 0 1pt rgb(87,196,223);*/
+  padding-left: 48px;
+  border: 2px solid rgb(68,68,68) !important;
+}
+.POPInput.POPInputText {
+	background: white;
+  padding: 10px !important;
+  height: 63px;
+  width: 552px;
+}
+.POPInput.POPInputLink {
+	background: white url("/img/inputLink.png") no-repeat left 15px center;
+}
+.POPInput.POPInputUserId {
+  background: white url("/img/inputLink.png") no-repeat left 15px center;
+}
+.POPInput.POPInputWallet {
+	background: white url("/img/inputWallet.png") no-repeat left 15px center;
+}
+.POPInput.POPInputText:focus {
+  background: white;
+}
+.POPInput.POPInputLink:focus {
+  background: white url("/img/inputLink.png") no-repeat left 13px center;
+}
+.POPInput.POPInputUserId:focus {
+  background: white url("/img/inputLink.png") no-repeat left 13px center;
+}
+.POPInput.POPInputWallet:focus {
+  background: white url("/img/inputWallet.png") no-repeat left 13px center;
+}
+.POPTitle2 {
+	text-transform: uppercase;
+	color: rgb(68,68,68);
+	font-size: 24px;
+	font-weight: 700;
+}
+.POPDescription2 {
+	color: rgb(48,142,162);
+	font-size: 12px;
+	line-height: 20px;
+}
+.POPButton {
+  transition: .2s ease-out;
+  text-transform: uppercase;
+  background: rgb(108,193,70);
+  color: white;
+  border: none;
+  height: 56px;
+  width: 120px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.POPButton:hover,
+.POPButton:focus {
+    background: RGB(134, 204, 102);
+}
+.POPButton:focus {
+  outline: none;
+}
+.copyText1Slide {
+  transition: .2s ease-out;
+  text-transform: uppercase;
+  background: rgb(89,89,89) url("/img/copyWithBG.png") no-repeat left center;
+  color: white;
+  border: none;
+  height: 34px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 3px;
+  padding-left: 43px;
+  padding-right: 10px;
+  cursor: pointer;
+  width: 128px !important;
+}
+.copyText1Slide:focus {
+  outline: none;
+}
+.createGist1Slide {
+  transition: .2s ease-out;
+  text-transform: uppercase;
+  background: rgb(89,89,89) url("/img/githubWithBG.png") no-repeat left center;
+  color: white;
+  border: none;
+  height: 34px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 3px;
+  padding-left: 43px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.createGist1Slide:focus {
+  outline: none;
+}
+.nextButton1Slide {
+  transition: .2s ease-out;
+  text-transform: uppercase;
+  background: rgb(108,193,70) url("/img/nextStepArrow.png") no-repeat left center;
+  color: white;
+  border: none;
+  height: 34px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 3px;
+  padding-left: 43px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.nextButton1Slide:focus {
+  outline: none;
+}
+.successTable {
+	border: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.successTableBody {
+}
+.successTableCellWalletLabel {
+	background: rgb(73,73,73) url("/img/inputWalletWhite.png") no-repeat center center;
+	padding: 15px;
+	border-top-left-radius: 5px !important;
+}
+.successTableCellGithubLabel {
+	background: rgb(98,98,98) url("/img/inputGithubWhite.png") no-repeat center center;
+	padding: 15px;
+}
+.successTableCellGistLabel {
+  background: rgb(98,98,98) url("/img/inputGithubWhite.png") no-repeat center center;
+  padding: 15px;
+  border-bottom-left-radius: 5px !important;
+}
+.successTableCellWalletValue {
+	background: rgb(89,89,89);
+	padding: 15px;
+	border-top-right-radius: 5px !important;
+}
+.successTableCellGithubValue {
+	background: rgb(136,136,136);
+	padding: 15px;
+}
+.successTableCellGistValue {
+  background: rgb(136,136,136);
+  padding: 15px;
+  border-bottom-right-radius: 5px !important;
+}
+.shareButton {
+  transition: .2s ease-out;
+  text-transform: uppercase;
+  background: rgb(89,89,89) url("/img/shareIcon.png") no-repeat left center;
+  color: white;
+  border: none;
+  height: 34px;
+  width: 100px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0 0 2px 32px !important;
+  margin-bottom: 10px;
+}
+.shareButton:focus {
+  outline: none;
+}
+.shareButton:hover,
+.shareButton:focus {
+  background: rgb(115, 115, 115) url("/img/shareIcon.png") no-repeat left center;
+}
+.shareButton.zeroclipboard-is-hover {
+  background: rgb(115, 115, 115) url("/img/shareIcon.png") no-repeat left center;
+}
+#step3CopyTable {
+  display: inline-block;
+}
+.copyTable {
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.copyTable.nomargin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.copyTableCellCopyButton {
+  transition: .2s ease-out;
+  background: rgb(73,73,73) url("/img/copy.png") no-repeat center center;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  cursor: pointer;
+  width: 42px;
+  height: 40px;
+}
+.copyTableCellCopyButton.zeroclipboard-is-hover {
+  transition: .2s ease-out;
+  background: rgb(89, 89, 89) url("/img/copy.png") no-repeat center center !important;
+}
+.copyTableCellCopyButton2 {
+  transition: .2s ease-out;
+  background: rgb(73,73,73) url("/img/copy.png") no-repeat center center;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  cursor: pointer;
+  width: 42px;
+  height: 40px;
+}
+.copyTableCellCopyButton2.left {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+.copyTableCellCopyButton3 {
+  transition: .2s ease-out;
+  background: rgb(73,73,73) url("/img/inputGithubWhite.png") no-repeat center center;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  cursor: pointer;
+  width: 42px;
+  height: 40px;
+}
+.copyTableCellCopyButton3.left {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+.copyTableCellCopyButton2.zeroclipboard-is-hover {
+  transition: .2s ease-out;
+  background: rgb(89, 89, 89) url("/img/copy.png") no-repeat center center !important;
+}
+.copyTableCellWalletValue1 {
+  background: rgb(217, 217, 217);
+  color: rgb(68, 68, 68);
+  /*padding: 15px;*/
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.copyTableCellWalletValue2 {
+   /*background: rgb(89,89,89);*/
+   background: rgb(89,89,89) url("/img/wallet_icon.png") no-repeat 15px center;
+   color: white;
+   /*padding: 15px;*/
+   padding-left: 48px;
+   padding-right: 15px;
+   border-top-left-radius: 5px !important;
+   border-bottom-left-radius: 5px !important;
+  
+}
+#addressVal {
+  background: rgb(89,89,89) url("/img/wallet_icon.png") no-repeat 15px center;
+}
+#hashVal {
+  background: rgb(89,89,89) url("/img/message_icon.png") no-repeat 15px center;
+}
+.copyTableCellWalletValue2.right {
+   border-top-left-radius: 0px !important;
+   border-bottom-left-radius: 0px !important;
+   border-top-right-radius: 5px !important;
+   border-bottom-right-radius: 5px !important;
+}
+.radioContainer {
+  display: table;
+  vertical-align: middle;
+  color: rgb(68, 68, 68);
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.radioInnerContainer {
+  display: table-cell;
+  padding-right: 60px;
+}
+.POPradio {
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 11px;
+  display: table-cell;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+}
+.POPradioText {
+  display: table-cell;
+  padding-left: 10px;
+}
+.POPradioSelected {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 6px;
+  background: rgb(73,73,73);
+}
+.POPradioUnselected {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 6px;
+  background: white;
+}
+.toast {
+  background: rgb(108,193,70) !important;
+}
+.someOuterContainer {
+  /*display: table !important;
+  vertical-align: middle !important;
+  height: 40px !important;*/
+}
+.someContainer {
+  /*display: table-cell !important;*/
+}
+#bottomDescAddition {
+  margin-top: 20px;
+  /*line-height: 40px !important;*/
+}
+.step1ButtonsContainer {
+  display: table;
+  padding-bottom: 30px;
+  width: 552px;
+}
+.step1ButtonsContainerInner {
+  display: table-cell;
+  padding-right: 20px;
+  width: auto;
+}
+.step1ButtonsContainerInner.first {
+  width: 128px;
+}
+.step1ButtonsContainerInner.right {
+  padding-right: 0px !important;
+  text-align: right;
+}
+#octocat {
+  position:absolute;
+  top:70px;
+  right:0px;
+  z-index:1;
+}
+#octocat_eyes {
+  /*transition: .1s ease-out;*/
+  position:absolute;
+  top:200px;
+  right:160px;
+  z-index:2;
+  opacity:0.5;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

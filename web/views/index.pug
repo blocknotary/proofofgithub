@@ -1,0 +1,109 @@
+html
+	head
+		title Proof of Github
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700', rel='stylesheet', type='text/css').
+		link(href="img/favicon.ico",rel="icon" type="image/x-icon").
+		link(rel="stylesheet",href="/libs/materialize/css/materialize.css").
+		link(rel="stylesheet", href="/css/header.css").
+		link(rel="stylesheet", href="/css/index.css").
+		link(rel="stylesheet", href="/libs/loader/stylesheets/loader.css").
+		link(rel="stylesheet",href="/libs/sweetalert/dist/sweetalert.css").
+		//script(type='text/javascript',src='/js/contract.js').
+		script(type='text/javascript',src='/js/getQueryParamsHelper.js').
+		script(type='text/javascript',src='/libs/jquery.min.js').
+		script(type='text/javascript',src='/libs/jquery.cookie.js').
+		script(type='text/javascript',src='/libs/sweetalert/dist/sweetalert.min.js').
+		script(type='text/javascript',src="/libs/zeroclipboard/dist/ZeroClipboard.js").
+		script(type='text/javascript',src='/libs/materialize/js/materialize.min.js').
+	body.mainBody
+		include ./top.pug
+		input#cookieIdHash(value=cookieIdHash).hide
+		div.middleMainContainer
+			div.middleMainContainerInner
+				div.middleMainContainerInnerInner
+					div.POPLabelContainer
+						label.POPLabel Step 1
+						input#stepNum(value=1).hide
+						input#token.hide
+					div.POPTitleContainer
+						label.POPTitle Copy text & Create Gist
+					div.POPDescContainer
+						label#topDesc.POPDesc Proof of Github is a smart oracle developed for the Etherium blockchain to serve as a simple form of KYC (Know-Your-Customer).
+					div.inputContainer
+						div.radioContainer.hide
+							input(type="radio", id="radioCheckLink", name="radioCheck", value="link").hide
+							input(type="radio", id="radioCheckWallet", name="radioCheck", value="wallet").hide
+							div.radioInnerContainer
+								div#linkRadio.POPradio
+									div.POPRadioInner.POPradioSelected 
+								span.POPradioText Github account
+							div#walletRadio.radioInnerContainer
+								div.POPradio
+									div.POPRadioInner.POPradioUnselected 
+								span.POPradioText Ethereum wallet
+						textarea(id="POPInputText", type="number", autofocus).POPInput.POPInputText In the world of post-modernism, it is no longer clear that any one identity is ‘real’.&#13;&#10;d8a757852d3c255b4364dee86f91eb6914cf5d1b880d313168d670c8af9d63a9
+						input(id="POPInputLink", placeholder="Gist link").POPInput.POPInputLink.hide
+						input(id="POPInputWallet" placeholder="Ethereum wallet").POPInput.POPInputWallet.hide
+						input(id="POPInputUserId", placeholder="Github account").POPInput.POPInputUserId.hide
+						button.POPButton#POPSubmit.hide submit
+					div.step1ButtonsContainer
+						div.step1ButtonsContainerInner.first
+							button#copyText1Slide.copyText1Slide Copy text
+						div.step1ButtonsContainerInner
+							button(disabled).createGist1Slide Create Gist
+						div.step1ButtonsContainerInner.right
+							button(disabled).nextButton1Slide Next Step
+					div.POPBottomDescriptionContainer
+						div.POPTitleContainer
+							label.POPTitle2 How does it work?
+						div.POPDescContainer
+							label#bottomDesc.POPDesc Press "Copy text" to copy verification text to a clipboard and paste it as a secret gist on Github. After verification, we will ask you to deposit a service fee of 0.1 ether to a smart contract at the address
+							table#copyHashTable(cellspacing="0" cellpadding="0").copyTable.nomargin.hide
+								tbody.copyTableBody
+									tr
+										td#hashVal.copyTableCellWalletValue2
+										td#hashCopy.copyTableCellCopyButton2
+							div.someOuterContainer
+								div.someContainer
+									label#bottomDescAddition.POPDesc.hide
+								div.someContainer
+									table#step3CopyTable(cellspacing="0" cellpadding="0").copyTable.nomargin.hide
+										tbody.copyTableBody
+											tr
+												td#addressVal.copyTableCellWalletValue2= address
+												td(data-clipboard-text="#{address}")#copyWallet.copyTableCellCopyButton
+							table#step1CopyTable(cellspacing="0" cellpadding="0").copyTable
+								tbody.copyTableBody
+									tr
+										td.copyTableCellWalletValue1= address
+					div.successContainer.hide
+						table(cellspacing="0" cellpadding="0").successTable
+							tbody.successTableBody
+								tr
+									td.successTableCellWalletLabel
+										img(src="/img/inputWalletWhite.png")
+									td.successTableCellWalletValue
+								tr
+									td.successTableCellGithubLabel
+									td.successTableCellGithubValue
+								tr
+									td.successTableCellGistLabel
+									td.successTableCellGistValue
+
+						button(data-clipboard-text="").shareButton#POPShare Share
+						div
+							label#bottomDescAddition2.POPDesc.hide
+				div.middleMainContainerInnerInner
+					img(id="octocat" src="/img/backgroundOctocat.png")
+					img(id="octocat_eyes" src="/img/octocatEyes.png")
+		img.githubRibbon
+		//img(src="/img/loader.gif").loader.hide
+		div.loader.hide
+			div.loader-i.loader-i_left-top
+			div.loader-i.loader-i_right-top
+			div.loader-i.loader-i_left-center
+			div.loader-i.loader-i_right-center
+			div.loader-i.loader-i_left-bottom
+			div.loader-i.loader-i_right-bottom
+		include ./bottom.pug
+	script(type="text/javascript" src="/js/indexClient.js").
