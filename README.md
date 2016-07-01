@@ -1,3 +1,5 @@
+![Proof of Phone logo](https://raw.githubusercontent.com/blocknotary/proofofgithub/master/logo_proof_of_github.png)
+
 Proof of Github is a smart oracle developed for the Etherium blockchain to serve as a simple form of KYC (Know-Your-Customer).
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
