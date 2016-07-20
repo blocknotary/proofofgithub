@@ -4,8 +4,8 @@
 .githubRibbon {
   width: 141;
   height: 141;
-  /*background: transparent url("/img/gitHubRibbon.png") no-repeat center center;*/
-  content: url("/img/gitHubRibbon.png");
+  background: transparent url("/img/gitHubRibbon.png") no-repeat center center;
+  /*content: url("/img/gitHubRibbon.png");*/
   position: absolute;
   top: 0;
   right: 0;
@@ -181,7 +181,7 @@
   padding-left: 43px;
   padding-right: 10px;
   cursor: pointer;
-  width: 128px !important;
+  width: 134px !important;
 }
 .copyText1Slide:focus {
   outline: none;
