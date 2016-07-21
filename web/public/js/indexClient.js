@@ -87,7 +87,7 @@ $(document).ready(function() {
 
 	function eyesAnimation(event) {
 		var win_width = parseFloat($( window ).width());
-  		var win_height = parseFloat($( window ).height());
+  		var win_height = parseFloat(window.innerHeight);//parseFloat($( window ).height());
   		var max_right_shift;
   		if (!prevPageX)
   			prevPageX = parseFloat(event.pageX);
