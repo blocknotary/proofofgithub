@@ -43,7 +43,9 @@ config.json with placeholders
     }, 
     "rpc": {
       "test": "http://host:port",
-      "live": "http://host:port"
+      "live": "http://host:port",
+      "user": "user_for_http_basic_auth_for_live_rpc",
+      "pass": "pass_for_http_basic_auth_for_live_rpc"
     }
   }
 }
