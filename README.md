@@ -23,7 +23,7 @@ Proof of Github is a smart oracle developed for the Etherium blockchain to serve
 config.json with placeholders
 ```
 {
-  "environment": "live/dev",
+  "environment": "live/test",
   "globalToken": "globalToken_for_using_proof_of_github_api",
   "salt": "salt_for_cookie_id_hash_creating",
   "githubAPI": {
