@@ -16,6 +16,7 @@ module.exports = function (app) {
 	               	.digest('hex');
 		attachToContract(function(err, contract) {
 			if (err) {
+				console.log(err);
 				response.render("index", {
 					"address": app.contractAddress,
 					"cookieIdHash": cookieIdHash

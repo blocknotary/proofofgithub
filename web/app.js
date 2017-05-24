@@ -8,17 +8,16 @@ var crypto = require('crypto');
 var uuid = require('uuid');
 
 var config = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
+var provider = require('./helpers/basicauthhttpprovider');
 
 var web3;
 if (typeof web3 !== 'undefined') {
   web3 = new Web3(web3.currentProvider);
 } else {
   if (config.environment == "live")
-    web3 = new Web3(new Web3.providers.HttpProvider(config.smartContract.rpc.live));
-  else if (config.environment == "dev")
-    web3 = new Web3(new Web3.providers.HttpProvider(config.smartContract.rpc.test));
-  else
-    web3 = new Web3(new Web3.providers.HttpProvider(config.smartContract.rpc.test));
+    web3 = new Web3(new provider(config.smartContract.rpc[config.environment], config.smartContract.rpc.user, config.smartContract.rpc.pass));
+  else 
+    web3 = new Web3(new Web3.providers.HttpProvider(config.smartContract.rpc[config.environment]));
 }
 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
@@ -34,16 +33,8 @@ app.web3 = web3;
 app.crypto = crypto;
 app.uuid = uuid;
 
-if (config.environment == "live") {
-  app.contractAddress = config.smartContract.contractAddress.live;
-  app.contractWallet = config.smartContract.wallet.live;
-} else if (config.environment == "dev") {
-  app.contractAddress = config.smartContract.contractAddress.test;
-  app.contractWallet = config.smartContract.wallet.test;
-} else {
-  app.contractAddress = config.smartContract.contractAddress.test;
-  app.contractWallet = config.smartContract.wallet.test;
-}
+app.contractAddress = config.smartContract.contractAddress[config.environment];
+app.contractWallet = config.smartContract.wallet[config.environment];
 
 function errorHandler(err, req, res, next) {
   	res.status(500);
