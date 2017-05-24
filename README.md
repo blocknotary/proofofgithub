@@ -9,7 +9,7 @@ Proof of Github is a smart oracle developed for the Etherium blockchain to serve
 1. Download zip archive
 2. Unpack it
 3. Go to the /web folder in terminal and install the dependencies `npm install`
-4. Set **environment** in web/config.json (see config.json with placeholders below): `dev` or `live`
+4. Set **environment** in web/config.json (see config.json with placeholders below): `test` or `live`
 5. Set smart contract key points in web/config.json (see config.json with placeholders below):
     * `wallet.test`, `wallet.live`
     * `rpc.test`, `rpc.live`
